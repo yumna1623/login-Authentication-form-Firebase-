@@ -48,6 +48,7 @@ const handleLogin = () => {
         .then((userCredentials) => {
             console.log(userCredentials);
             alert("User Logged In Successfully");
+            window.location.href = "./quiz.html";
         })
         .catch((error) => {
           alert(error.message);
