@@ -4,7 +4,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword ,
   onAuthStateChanged,
-  signOut
+  signOut,
 
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
 
@@ -29,7 +29,9 @@ const handleSignup = () => {
   if (email && password) {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
+          alert("User signed In Successfully");
         window.location.href = "./login.html";
+
       })
       .catch((error) => {
         alert(error.message);
@@ -45,6 +47,7 @@ const handleLogin = () => {
         signInWithEmailAndPassword(auth,email,password)
         .then((userCredentials) => {
             console.log(userCredentials);
+            alert("User Logged In Successfully");
         })
         .catch((error) => {
           alert(error.message);

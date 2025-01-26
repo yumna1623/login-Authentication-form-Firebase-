@@ -1,0 +1,37 @@
+body{
+    background-color: #212529;
+    color: aliceblue;
+}
+.login {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 300px;
+    padding: 20px;
+    margin-left:520px;
+    margin-top: 110px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #7952b3;
+}
+.signUp{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    width: 300px;
+    padding: 20px;
+    margin-left:520px;
+    margin-top: 110px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #7952b3;
+    height: auto;
+}
+
+.buttons{
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+    width: 50px;
+    margin-left: 20px;
+}
